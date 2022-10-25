@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 80:80
+      - 3001:80
     links:
       - "mariadb:mariadb.local"
       - "redis:redis.local"
