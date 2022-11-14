@@ -30,6 +30,34 @@ services:
       - 6379:6379
     volumes:
       - redis-data:/data
+      
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=127.0.0.1
+      - PMA_PORT=3306
+    
+    depends_on:
+      - mariadb
+      
+    links:
+      - mariadb
+      
+  services:
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+    - REDIS_HOSTS=local:127.0.0.1:6379 
+    ports:
+    - "8081:8081"
 
 volumes:
   mariadb-data:
