@@ -69,7 +69,15 @@ docker run -d \
   cd /var/opt/
   ```
   
+
+  
+  # Install git 
+  ```bash
+  sudo apt-get install git-all
+  ```
+  
   # Setup repository 
+  
   ```bash
   git clone https://github.com/dev-eugen/Setup.git .
   ```
