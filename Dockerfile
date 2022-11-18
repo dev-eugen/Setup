@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y \
-        php8.1-fpm php8.1-mbstring php8.1-mysql php8.1-xml php-gmp php8.1-dom php8.1-zip php8.1-intl \
+        php8.1-fpm php8.1-mbstring php8.1-mysql php8.1-xml php-gmp php8.1-dom php8.1-zip php8.1-intl vim \
         php8.1-gd php8.1-imap php8.1-curl php8.1-sqlite php8.1-sybase \
         nginx rsyslog supervisor curl npm \
     && npm install -g n gulp webpack-cli @vue/cli && n 14 \
