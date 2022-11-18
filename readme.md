@@ -68,3 +68,8 @@ docker run -d \
   ```bash
   cd /var/opt/
   ```
+  
+  # Setup repository 
+  ```bash
+  git clone https://github.com/dev-eugen/Setup.git .
+  ```
