@@ -63,3 +63,8 @@ docker run -d \
   ```bash 
     ufw enable
   ```
+  
+  # Go to setup directory
+  ```bash
+  
+  ```
