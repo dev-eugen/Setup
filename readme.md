@@ -66,5 +66,5 @@ docker run -d \
   
   # Go to setup directory
   ```bash
-  
+  cd /var/opt/
   ```
