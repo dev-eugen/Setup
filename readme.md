@@ -87,3 +87,8 @@ docker run -d \
   ```bash
   git clone https://github.com/dev-eugen/Setup.git .
   ```
+  
+  # Install vim
+  ```bash
+  apt-get install vim
+  ```
