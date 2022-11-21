@@ -100,3 +100,8 @@ docker run -d \
 docker exec -it opt-web-1 /bin/bash
 ```
 
+  # Install laravel
+  ```bash
+cd var/www && mkdir urlname.com && cd urlname.com && mkdir html && git clone https://github.com/laravel/laravel.git . && composer install
+```
+
