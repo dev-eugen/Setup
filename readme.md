@@ -105,3 +105,9 @@ docker exec -it opt-web-1 /bin/bash
 cd var/www && mkdir urlname.com && cd urlname.com && mkdir html && git clone https://github.com/laravel/laravel.git . && composer install
 ```
 
+
+  # REMEMVER after toch ngninx cong write
+  ```bash
+cd /var/otp && docker-compose restart
+```
+
