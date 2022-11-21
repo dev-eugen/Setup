@@ -33,6 +33,8 @@ sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo chmod +x /usr/bin/docker-compose
 ```
 
+###
+
  ### Check docker
  
 ```bash
@@ -92,3 +94,9 @@ docker run -d \
   ```bash
   apt-get install vim
   ```
+  
+  # Go to container
+  ```bash
+docker exec -it opt-web-1 /bin/bash
+```
+
