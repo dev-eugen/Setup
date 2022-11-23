@@ -14,6 +14,30 @@ services:
       - ./conf/nginx/mime.types:/etc/nginx/mime.types
       - ./conf/php-fpm/php-fpm.ini:/etc/php/8.1/fpm/conf.d/90-custom.ini
       - ./www:/var/www
+      
+   nginxproxymanager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+
+    # Uncomment the next line if you uncomment anything in the section
+    # environment:
+      # Uncomment this if you want to change the location of 
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+
+      # Uncomment this if IPv6 is not enabled on your host
+      # DISABLE_IPV6: 'true'
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
 
   mariadb:
     image: mariadb:10.9.3
@@ -61,3 +85,4 @@ services:
 volumes:
   mariadb-data:
   redis-data:
+  nginxproxymanager-data:
