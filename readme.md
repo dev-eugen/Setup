@@ -43,7 +43,7 @@ sudo docker run hello-world
 
 
 
-# Install nginxproxymanager
+# Install nginxproxymanager but in this version this step in docker-copmase.yaml
 
 ```bash docker volume create nginxproxymanager-data
 docker volume create nginxproxymanager-letsencrypt
