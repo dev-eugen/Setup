@@ -6,9 +6,7 @@ services:
     environment:
       - PMA_HOST=135.181.206.205
       - PMA_PORT=3306
-      - PMA_ARBITRARY=1
-      - PMA_USER=root
-      - PMA_PASSWORD=root
+      - PMA_ARBITRARY=1 
     ports:
       - 8080:80
       
