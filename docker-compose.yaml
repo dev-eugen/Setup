@@ -17,7 +17,7 @@ services:
       
       
       
-   nginxproxymanager:
+   app:
     image: 'jc21/nginx-proxy-manager:10.10.2'
     restart: unless-stopped
     ports:
@@ -87,4 +87,4 @@ services:
 volumes:
   mariadb-data:
   redis-data:
-  nginxproxymanager-data:
+  app-data:
