@@ -16,7 +16,7 @@ services:
       - ./www:/var/www
       
    nginxproxymanager:
-    image: 'jc21/nginx-proxy-manager:latest'
+    image: 'jc21/nginx-proxy-manager:10.10.2'
     restart: unless-stopped
     ports:
       # These ports are in format <host-port>:<container-port>
