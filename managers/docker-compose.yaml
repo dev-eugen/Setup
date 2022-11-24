@@ -4,7 +4,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     restart: always
     environment:
-      - PMA_HOST=localhost
+      - PMA_HOST=5537ba2dfdd2
       - PMA_PORT=3306
       - PMA_ARBITRARY=1
       - PMA_USER=root
