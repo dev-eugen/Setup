@@ -4,7 +4,6 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     restart: always
     environment:
-      - PMA_HOST=135.181.206.205
       - PMA_PORT=3306
       - PMA_ARBITRARY=1 
     ports:
